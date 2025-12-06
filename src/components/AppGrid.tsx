@@ -22,6 +22,15 @@ const apps: AppData[] = [
         url: 'https://github.com/SNABUR/people-manager'
     },
     {
+        id: 101,
+        name: 'SubTracker',
+        description: 'Control your recurring expenses and save money.',
+        rating: 5.0,
+        color: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
+        icon: '💳',
+        url: 'https://github.com/Jaionee/subscription-tracker'
+    },
+    {
         id: 1,
         name: 'Neon Notes',
         description: 'Capture your thoughts in style with our glowing interface.',
