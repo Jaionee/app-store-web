@@ -31,6 +31,15 @@ const apps: AppData[] = [
         url: 'https://github.com/Jaionee/subscription-tracker'
     },
     {
+        id: 102,
+        name: 'CryptoTrack',
+        description: 'Real-time crypto portfolio tracker with Bitcoin theme.',
+        rating: 4.8,
+        color: 'linear-gradient(135deg, #F7931A, #E88209)',
+        icon: '₿',
+        url: 'https://github.com/Jaionee/crypto-tracker'
+    },
+    {
         id: 1,
         name: 'Neon Notes',
         description: 'Capture your thoughts in style with our glowing interface.',
