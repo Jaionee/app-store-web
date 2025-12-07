@@ -7,6 +7,7 @@ interface AppProps {
   color: string;
   icon: string;
   url: string;
+  liveUrl?: string;
 }
 
 const AppCard = ({ app }: { app: AppProps }) => {
@@ -20,7 +21,25 @@ const AppCard = ({ app }: { app: AppProps }) => {
         <p>{app.description}</p>
         <div className="card-footer">
           <span className="rating">★ {app.rating}</span>
-          <a href={app.url} target="_blank" rel="noopener noreferrer" className="btn-download">Get</a>
+          <div className="button-group">
+            {app.liveUrl && (
+              <a href={app.liveUrl} target="_blank" rel="noopener noreferrer" className="btn-live">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                  <polyline points="15 3 21 3 21 9"></polyline>
+                  <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                Live
+              </a>
+            )}
+            <a href={app.url} target="_blank" rel="noopener noreferrer" className="btn-code">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                <polyline points="16 18 22 12 16 6"></polyline>
+                <polyline points="8 6 2 12 8 18"></polyline>
+              </svg>
+              Code
+            </a>
+          </div>
         </div>
       </div>
       <style>{`
@@ -85,6 +104,7 @@ const AppCard = ({ app }: { app: AppProps }) => {
           display: flex;
           align-items: center;
           justify-content: space-between;
+          gap: 0.5rem;
         }
 
         .rating {
@@ -93,21 +113,42 @@ const AppCard = ({ app }: { app: AppProps }) => {
           font-size: 0.9rem;
         }
 
-        .btn-download {
+        .button-group {
+          display: flex;
+          gap: 0.5rem;
+        }
+
+        .btn-live,
+        .btn-code {
           background: rgba(255, 255, 255, 0.1);
           color: var(--text-primary);
-          padding: 0.4rem 1.2rem;
+          padding: 0.4rem 0.8rem;
           border-radius: 20px;
-          font-size: 0.85rem;
+          font-size: 0.75rem;
           font-weight: 600;
           transition: all 0.2s ease;
           text-decoration: none;
-          display: inline-block;
+          display: inline-flex;
+          align-items: center;
+          gap: 0.3rem;
         }
 
-        .app-card:hover .btn-download {
+        .btn-live {
           background: var(--accent-primary);
           color: white;
+        }
+
+        .btn-live:hover {
+          background: var(--accent-secondary);
+          transform: translateY(-2px);
+        }
+
+        .btn-code:hover {
+          background: rgba(255, 255, 255, 0.2);
+        }
+
+        .app-card:hover .btn-code {
+          background: rgba(255, 255, 255, 0.15);
         }
       `}</style>
     </div>

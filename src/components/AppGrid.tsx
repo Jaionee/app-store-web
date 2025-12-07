@@ -9,6 +9,7 @@ interface AppData {
     color: string;
     icon: string;
     url: string;
+    liveUrl?: string;
 }
 
 const apps: AppData[] = [
@@ -19,7 +20,8 @@ const apps: AppData[] = [
         rating: 5.0,
         color: 'linear-gradient(135deg, #1D6F42, #21A366)',
         icon: '📊',
-        url: 'https://github.com/Jaionee/people-manager'
+        url: 'https://github.com/Jaionee/people-manager',
+        liveUrl: 'https://people-manager-r6wyxttmg-memes-projects-9faf9c0d.vercel.app'
     },
     {
         id: 101,
@@ -28,7 +30,8 @@ const apps: AppData[] = [
         rating: 5.0,
         color: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
         icon: '💳',
-        url: 'https://github.com/Jaionee/subscription-tracker'
+        url: 'https://github.com/Jaionee/subscription-tracker',
+        liveUrl: 'https://subscription-tracker-kgt0puie5-memes-projects-9faf9c0d.vercel.app'
     },
     {
         id: 102,
@@ -37,7 +40,8 @@ const apps: AppData[] = [
         rating: 4.8,
         color: 'linear-gradient(135deg, #F7931A, #E88209)',
         icon: '₿',
-        url: 'https://github.com/Jaionee/crypto-tracker'
+        url: 'https://github.com/Jaionee/crypto-tracker',
+        liveUrl: 'https://crypto-tracker-m9e8hggez-memes-projects-9faf9c0d.vercel.app'
     },
     {
         id: 1,
