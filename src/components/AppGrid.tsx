@@ -45,13 +45,12 @@ const apps: AppData[] = [
     },
     {
         id: 1,
-        name: 'Crypto Watch',
-        description: 'Vigilancia de criptomonedas - Seguimiento del mercado en tiempo real con análisis avanzados.',
-        rating: 5.0,
-        color: 'linear-gradient(135deg, #00ff88, #3b82f6)',
-        icon: '🚀',
-        url: 'https://github.com/Jaionee/crypto-watch',
-        liveUrl: 'https://crypto-watch-lhk5mnt3b-memes-projects-9faf9c0d.vercel.app'
+        name: 'Neon Notes',
+        description: 'Capture your thoughts in style with our glowing interface.',
+        rating: 4.8,
+        color: 'linear-gradient(135deg, #ff00cc, #333399)',
+        icon: '📝',
+        url: '#'
     },
     {
         id: 2,
