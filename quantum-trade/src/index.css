@@ -1,0 +1,117 @@
+:root {
+  --bg-space: #050510;
+  --bg-panel: rgba(10, 10, 30, 0.8);
+  --neon-blue: #00f3ff;
+  --neon-purple: #bc13fe;
+  --neon-green: #0aff0a;
+  --text-primary: #e0e0ff;
+  --text-dim: #8080a0;
+  --grid-color: rgba(0, 243, 255, 0.1);
+  --font-mono: 'Courier New', Courier, monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-space);
+  color: var(--text-primary);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background-image:
+    linear-gradient(var(--grid-color) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
+  background-size: 50px 50px;
+  background-position: center center;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  position: relative;
+}
+
+h1,
+h2,
+h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px var(--neon-blue);
+}
+
+h1 {
+  color: var(--neon-blue);
+  margin-bottom: 0.5rem;
+}
+
+button {
+  background: transparent;
+  border: 1px solid var(--neon-blue);
+  color: var(--neon-blue);
+  padding: 0.8rem 2rem;
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px var(--neon-blue), inset 0 0 5px var(--neon-blue);
+  text-shadow: 0 0 5px var(--neon-blue);
+}
+
+button:hover {
+  background: var(--neon-blue);
+  color: var(--bg-space);
+  box-shadow: 0 0 20px var(--neon-blue);
+}
+
+button:disabled {
+  border-color: var(--text-dim);
+  color: var(--text-dim);
+  box-shadow: none;
+  cursor: not-allowed;
+}
+
+.panel {
+  background: var(--bg-panel);
+  border: 1px solid var(--neon-purple);
+  padding: 1.5rem;
+  border-radius: 4px;
+  box-shadow: 0 0 15px rgba(188, 19, 254, 0.2);
+  backdrop-filter: blur(5px);
+  position: relative;
+}
+
+.panel::before {
+  content: '';
+  position: absolute;
+  top: -1px;
+  left: -1px;
+  right: -1px;
+  bottom: -1px;
+  background: linear-gradient(45deg, var(--neon-purple), transparent, var(--neon-blue));
+  z-index: -1;
+  border-radius: 5px;
+  opacity: 0.5;
+}
+
+input[type="checkbox"] {
+  accent-color: var(--neon-green);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-space);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--neon-purple);
+  border-radius: 4px;
+}
