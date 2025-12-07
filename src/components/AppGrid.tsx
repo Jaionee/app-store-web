@@ -19,7 +19,7 @@ const apps: AppData[] = [
         rating: 5.0,
         color: 'linear-gradient(135deg, #1D6F42, #21A366)',
         icon: '📊',
-        url: 'https://github.com/SNABUR/people-manager'
+        url: 'https://github.com/Jaionee/people-manager'
     },
     {
         id: 101,
