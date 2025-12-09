@@ -14,6 +14,16 @@ interface AppData {
 
 const apps: AppData[] = [
     {
+        id: 0,
+        name: 'sheetAI',
+        description: 'Aplicación que te facilita la vida cuando usas excel.',
+        rating: 5.0,
+        color: 'linear-gradient(135deg, #1D6F42, #21A366)',
+        icon: '📊',
+        url: 'https://github.com/Jaionee/people-manager',
+        liveUrl: 'https://people-manager-r6wyxttmg-memes-projects-9faf9c0d.vercel.app'
+    },
+    {
         id: 102,
         name: 'CryptoTrack',
         description: 'Real-time crypto portfolio tracker with Bitcoin theme.',
