@@ -14,14 +14,14 @@ interface AppData {
 
 const apps: AppData[] = [
     {
-        id: 0,
-        name: 'sheetAI',
-        description: 'Aplicación que te facilita la vida cuando usas excel.',
-        rating: 5.0,
-        color: 'linear-gradient(135deg, #1D6F42, #21A366)',
-        icon: '📊',
-        url: 'https://github.com/Jaionee/people-manager',
-        liveUrl: 'https://people-manager-r6wyxttmg-memes-projects-9faf9c0d.vercel.app'
+        id: 102,
+        name: 'CryptoTrack',
+        description: 'Real-time crypto portfolio tracker with Bitcoin theme.',
+        rating: 4.8,
+        color: 'linear-gradient(135deg, #F7931A, #E88209)',
+        icon: '₿',
+        url: 'https://github.com/Jaionee/crypto-tracker',
+        liveUrl: '/crypto-tracker'
     },
     {
         id: 101,
@@ -31,17 +31,17 @@ const apps: AppData[] = [
         color: 'linear-gradient(135deg, #3b82f6, #8b5cf6)',
         icon: '💳',
         url: 'https://github.com/Jaionee/subscription-tracker',
-        liveUrl: 'https://subscription-tracker-kgt0puie5-memes-projects-9faf9c0d.vercel.app'
+        liveUrl: '/subscription-tracker'
     },
     {
-        id: 102,
-        name: 'CryptoTrack',
-        description: 'Real-time crypto portfolio tracker with Bitcoin theme.',
-        rating: 4.8,
-        color: 'linear-gradient(135deg, #F7931A, #E88209)',
-        icon: '₿',
-        url: 'https://github.com/Jaionee/crypto-tracker',
-        liveUrl: 'https://crypto-tracker-m9e8hggez-memes-projects-9faf9c0d.vercel.app'
+        id: 103,
+        name: 'QuantumTrade',
+        description: 'Advanced trading platform with quantum algorithms.',
+        rating: 4.9,
+        color: 'linear-gradient(135deg, #667eea, #764ba2)',
+        icon: '📈',
+        url: 'https://github.com/Jaionee/quantum-trade',
+        liveUrl: '/quantum-trade'
     },
     {
         id: 1,
